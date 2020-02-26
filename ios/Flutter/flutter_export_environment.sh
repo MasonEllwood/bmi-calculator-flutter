@@ -1,8 +1,8 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
 export "FLUTTER_ROOT=/Users/masonellwood/flutter"
-export "FLUTTER_APPLICATION_PATH=/Users/masonellwood/Development/Fyresite/FlutterProjects/bmi-calculator-flutter"
-export "FLUTTER_TARGET=/Users/masonellwood/Development/Fyresite/FlutterProjects/bmi-calculator-flutter/lib/main.dart"
+export "FLUTTER_APPLICATION_PATH=/Users/masonellwood/Development/AndroidStudio/bmi-calculator-flutter"
+export "FLUTTER_TARGET=/Users/masonellwood/Development/AndroidStudio/bmi-calculator-flutter/lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
 export "SYMROOT=${SOURCE_ROOT}/../build/ios"
 export "FLUTTER_FRAMEWORK_DIR=/Users/masonellwood/flutter/bin/cache/artifacts/engine/ios"
