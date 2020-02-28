@@ -7,6 +7,7 @@ import '../components/bottom_button.dart';
 import '../components/icon_button.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../components/calculator_brain.dart';
+import 'dart:developer';
 
 enum Gender {
   male,
@@ -20,8 +21,8 @@ class InputPage extends StatefulWidget {
 
 class _InputPageState extends State<InputPage> {
   Gender selectedGender;
-  int height = 180;
-  int weight = 60;
+  double height = 5.8;
+  int weight = 145;
   int age = 20;
 
   @override
@@ -107,12 +108,13 @@ class _InputPageState extends State<InputPage> {
                           RoundSliderOverlayShape(overlayRadius: 30.0),
                     ),
                     child: Slider(
-                      value: height.toDouble(),
-                      min: 120.0,
-                      max: 220.0,
+                      value: height,
+                      min: 4.0,
+                      max: 7.0,
                       onChanged: (double newValue) {
                         setState(() {
-                          height = newValue.round();
+                          height = double.parse((newValue).toStringAsFixed(1));
+                          print(height);
                         });
                       },
                     ),

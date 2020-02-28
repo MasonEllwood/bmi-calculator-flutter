@@ -3,13 +3,13 @@ import 'dart:math';
 class CalculatorBrain {
   CalculatorBrain({this.height, this.weight});
 
-  final int height;
+  final double height;
   final int weight;
 
   double _bmi;
 
   String calculateBMI() {
-    _bmi = weight / pow(height / 100, 2);
+    _bmi = 703 * (weight / pow((height * 12), 2));
     return _bmi.toStringAsFixed(1);
   }
 
@@ -29,7 +29,7 @@ class CalculatorBrain {
     } else if (_bmi > 18.5) {
       return 'Nothing to worry about.';
     } else {
-      return 'Some paris hilton lookin skinny ass MF';
+      return 'Eat something FOO';
     }
   }
 }
